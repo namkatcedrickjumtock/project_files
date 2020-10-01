@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="Assets/img/logos/log.png">
+    <link rel="stylesheet" href="Assets/css/main_index.css">
+    <title>Hostel Dashboard</title>
+</head>
+<body>
+    <header>
+        <!-- ===========navigation section==================== -->
+ <div class="container-fluid fixed-top mx-0">
+    <button  type="button" id="menu-icon"  class=" btn-primary"><svg width="1em" height="1em" id="svg" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+        </button>
+    <nav class="nav flex-column fixed-top" id="sidenav">
+        <a class="nav-link active"  href="#"><i class="fa fa-home"></i>Home</a>
+        <a class="nav-link" href="Gitignor/room/room.html"><i class="fa fa-user"></i>Profile</a>
+        <a class="nav-link"  data-toggle="pill"  href="Gitignor/room/room.html" ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+          </svg>Messages</a>
+        <a class="nav-link" href="Gitignor/room/room.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-lines-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+          </svg>Contact</a>
+        <a class="nav-link"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-wallet" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5V3zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a1.99 1.99 0 0 1-1-.268zM1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1z"/>
+          </svg>Pricing</a>
+          <a  href="Gitignor/room/room.html" class="nav-link"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bricks" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5v-3zM3 4v2h4.5V4H3zm5.5 0v2H13V4H8.5zM3 10v2h4.5v-2H3zm5.5 0v2H13v-2H8.5zM1 1v2h3.5V1H1zm4.5 0v2H15V1H5.5zM1 7v2h3.5V7H1zm4.5 0v2h5V7h-5zm6 0v2H15V7h-3.5zM1 13v2h3.5v-2H1zm4.5 0v2h5v-2h-5zm6 0v2H15v-2h-3.5z"/>
+          </svg>About</a>
+        <a class="nav-link" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
+          </svg>Settings</a>
+      </nav>
+ </div>
+    </header>
+     <div class="container my-5 px-5" id="login-control-form">
+            <form action="#" class="needs-validation" novalidate>
+                <div class="col-md-12">
+                <h1>login</h1>
+                <img src="Assets/img/logos/logo.png" alt="" id="img" class="img-fluid">
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9 mb-4">
+                        <input type="text" class="form-control" id="fname" placeholder="enter your first name" required>
+                        <i  id="valid-icon-input" class ="fa fa-user"></i>
+                        <div class="invalid-feedback">Please enter your first name
+                            </div>
+                                 <div class="valid-feedback">
+                            looks good
+                            <i  id="valid-icon" class ="fa fa-check-circle"></i>
+                             </div>
+                        </div>
+                <div class="form-group">
+                    <div class="col-md-9 mb-4">
+                        <input type="text" class="form-control" id="lname" placeholder="enter your lastname" required>
+                        <i  id="valid-icon-input" class ="fa fa-user"></i>
+                             <div class="invalid-feedback">Please enter your last name
+                                </div>
+                                 <div class="valid-feedback">
+                                    looks good  
+                                    <i  id="valid-icon" class ="fa fa-check-circle"></i>
+                         </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9 mb-4">
+                        <input type="email" class="form-control" id="email" placeholder="enter your email" required>
+                        <i  id="valid-icon-input" class ="fa fa-envelope"></i>
+                        <!-- <i class="fa fa-envelope-o"></i> -->
+                             <div class="invalid-feedback">Please enter a valid email..!
+                                </div>
+                                 <div class="valid-feedback">
+                                 looks good
+                                 <i  id="valid-icon" class ="fa fa-check-circle"></i>
+                         </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9 mb-4">
+                        <input type="password" class="form-control" id="password" placeholder="enter your password" required>
+                        <i  id="valid-icon-input" class ="fa fa-lock"></i>
+                             <div class="invalid-feedback">Please enter password !
+                                </div>
+                                 <div class="valid-feedback">
+                                    <i  id="valid-icon" class ="fa fa-check-circle"></i>
+                        looks good
+                         </div>
+                    </div>
+                </div>
+              <div class="col-xs-12 col-sm-8 col-md-9">
+                <button class="btn btn-primary" id="btn-send" type="submit"> Login</button> 
+                   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" id="btn-send2" data-toggle="modal" data-target="#myModal">
+   sign up <i class="fa fa-hand-o-down"></i>
+  </button>
+  
+  <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="col-xs-12 col-sm-8 col-md-12">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">sign up here</h4>
+        </div>
+        <div class="modal-body">
+          <div class="needs-validation" id="modal-signup-form">
+              <div class="form-group">
+                  <div class="col-md-12 mb-4">
+                      <input type="text" class="form-control" id="fname" placeholder="enter your first name" required>
+                      <div class="invalid-feedback">
+                          enter your first name
+                      </div>
+                      <div class="valid-feedback">
+                          looks good
+                      </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12 mb-4">
+                    <input type="text" class="form-control" id="lname" placeholder="enter your lastname" required>
+                    <div class="invalid-feedback">
+                        enter your last name
+                    </div>
+                    <div class="valid-feedback">
+                        looks good
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12 mb-4">
+                    <input type="email" class="form-control" id="email" placeholder="enter your email" required>
+                    <div class="invalid-feedback">
+                        enter a valid email
+                    </div>
+                    <div class="valid-feedback">
+                        looks good
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12 mb-4">
+                    <input type="password" class="form-control" id="password" placeholder="enter a password" required>
+                        <div class="invalid-feedback">
+                            enter a strong password.!
+                        </div>
+                        <div class="valid-feedback">
+                            looks good
+                        </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12 mb-5">
+                    <input type="password" class="form-control" id="password2" placeholder="re-enter password" required>
+                        <div class="invalid-feedback">
+                            enter a strong password..!
+                        </div>
+                        <div class="valid-feedback">
+                            looks good
+                        </div>
+                        <button  id="signup-btn" class="btn btn-primary">sign up</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+ </div>
+ </form>
+ </div>
+              
+ 
+                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <script src="assets/js/jquery.js"></script>
+                <script src="Assets/js/main.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
