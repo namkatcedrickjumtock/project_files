@@ -1,0 +1,46 @@
+*{
+         box-sizing: border-box;
+         margin: 0px;
+         padding: 0px;
+}
+body{
+         background: #020402;
+         color: white;
+}
+.container{
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         display: flex;
+}
+.container p{
+         font-size: 20px;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         letter-spacing: 0.1rem;
+         text-align: center;
+         
+}
+.typed-text{
+         font-family: merienda;
+         font-size: 18px;
+         color: #08ecce;
+         font-weight: normal;
+}
+.cursor{
+         display: inline-block;
+         width: 5px;
+         background-color: #cccccc;
+         animation: blink 1s infinite;
+         margin-left: 0.1rem;    
+}
+/* adding a class to tht ecursorr to prevent it from blinking */
+/* .cursor.typing{ */
+         /* animation: none; */
+/* } */
+@keyframes blink{
+         0%{background-color: #ffffff;}
+         49%{background-color: #2600ff;}
+         50%{background: transparent;}
+         990%{background: transparent;}
+         100%{background-color: #cccccc;}
+}
